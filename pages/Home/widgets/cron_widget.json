@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 83,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{{\n{\n  \"cron\": create_cron.data?.response,\n  \"prompt\": \"\",\n\t\"isLoading\": create_cron?.isLoading \n}\n}}",
+  "defaultModel": "{{\n{\n  \"cron\": create_cron.data?.response,\n  \"prompt\": \"\",\n\t\"isLoading\": create_cron.isLoading || false\n}\n}}",
   "dynamicBindingPathList": [
     {
       "key": "theme"
@@ -33,7 +33,7 @@
   "events": [
     "generate_cron_with_ai"
   ],
-  "generate_cron_with_ai": "{{create_cron.run().then(() => { showAlert(create_cron.data.response, 'success');\n});}}",
+  "generate_cron_with_ai": "{{create_cron.run().then(() => {});}}",
   "isCanvas": false,
   "isLoading": false,
   "isSearchWildcard": true,
