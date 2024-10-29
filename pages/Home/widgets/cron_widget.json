@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 83,
+  "bottomRow": 61,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n{\n  \"cron\": create_cron.data?.response,\n  \"prompt\": \"\",\n\t\"isLoading\": create_cron.isLoading || false\n}\n}}",
   "dynamicBindingPathList": [
